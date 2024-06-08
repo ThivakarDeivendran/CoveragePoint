@@ -73,7 +73,21 @@ public void user_click_the_fashoin_module_in_amazon_main_page() throws Exception
 	    System.out.println(" User Maximum Price   :    " + getAttributeMethod(pageObject.getMinimumPriceFilter(),"value"));
 	    staticWaitMethod(3000);
 	    clickMethod(pageObject.getGoButton());
-	    softAssert.assertAll();
+	   
 	}
+	@And("user select the brands {string},{string}")
+	public void user_select_the_brands(String brandValue, String brandValue2) {
+		staticWaitMethod(3000);
+		executeScriptScrollToElement(pageObject.getBrandText());
+		staticWaitMethod(2000);
+		pageObject.setBrand(brandValue);
+		clickMethod(pageObject.getBrand());
+		staticWaitMethod(2000);
+		pageObject.setBrand(brandValue2);
+		clickMethod(pageObject.getBrand());
+		
+		 softAssert.assertAll();
+	}
+
 
 }

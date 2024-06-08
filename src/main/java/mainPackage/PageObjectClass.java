@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class PageObjectClass {
 	public static WebDriver driver;
 	public String customerReview;
+	public String userBrand;
 	public PageObjectClass(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);	
@@ -67,5 +68,19 @@ public class PageObjectClass {
 	
 	public WebElement getGoButton() {
 		return goButton;
+	}
+	
+	@FindBy(xpath="//span[text()='Brands']")
+	private WebElement brandText;
+	
+	public WebElement getBrandText() {
+		return brandText;
+	}
+	
+	public void setBrand(String value) {
+		this.userBrand=value;
+	}
+	public WebElement getBrand() {
+		return driver.findElement(By.xpath("//span[text()='"+userBrand+"']/parent::a"));
 	}
 }

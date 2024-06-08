@@ -11,3 +11,4 @@ Feature: Amazon Add to cart Feature
   Scenario: To check whether filter working properly or not
     Given User Click Average Customer Review
     And user select the price Filters
+		And user select the brands "Puma","Allen Solly"
