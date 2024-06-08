@@ -7,3 +7,7 @@ Feature: Amazon Add to cart Feature
     And User verify the Amazon Application title
     When User click the Fashion Module in Amazon Main Page
     Then User Observe that Mens Clothing subModule Link displays
+
+  Scenario: To check whether filter working properly or not
+    Given User Click Average Customer Review
+    And user select the price Filters

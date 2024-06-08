@@ -42,16 +42,13 @@ public static  WebDriver driver;
 	public static WebDriver launchBrowserMethod(String browser) {
 		try {
 		switch (browser) {
-		case "Chrome":
-//			WebDriverManager.chromedriver().setup();					
+		case "Chrome":			
 			driver = new ChromeDriver();
 			break;
 		case "Edge":
-//			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			break;
 		case "Firefox":
-//			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			break;
 		default:
@@ -306,6 +303,18 @@ public static  WebDriver driver;
 		scriptScrollDown.executeScript("window.scrollBy("+horizontal +","+vertical+")", "");
 	}
 	
+	public static void excuteScriptSetAttributeMethod(WebElement element,String attributValue,String attributeType) {
+		JavascriptExecutor setAttributeValue = (JavascriptExecutor) driver;
+		setAttributeValue.executeScript("arguments[0].setAttribute('"+attributeType+"', '"+attributValue+"')", element);
+	}
 	
+	public static void executeScriptScrollToElement(WebElement element) {
+		JavascriptExecutor scriptScrollTo = (JavascriptExecutor) driver;
+		scriptScrollTo.executeScript("arguments[0].scrollIntoView()", element);
+	}
+	
+	public static String getAttributeMethod(WebElement element, String attributeType) {
+		return element.getAttribute(attributeType);
+	}
 
 }

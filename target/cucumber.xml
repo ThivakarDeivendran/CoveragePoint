@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="25.399" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Amazon Add to cart Feature" name="To check whether Men SubModule displays under Fashion module" time="25.18">
+<testsuite name="Cucumber" time="61.436" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon Add to cart Feature" name="To check whether Men SubModule displays under Fashion module" time="36.333">
 <system-out><![CDATA[
 Given User launch the browser...............................................passed
 And User Navigate to Amazon Application.....................................passed
 And User verify the Amazon Application title................................passed
 When User click the Fashion Module in Amazon Main Page......................passed
 Then User Observe that Mens Clothing subModule Link displays................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Add to cart Feature" name="To check whether filter working properly or not" time="24.896">
+<system-out><![CDATA[
+Given User Click Average Customer Review....................................passed
+And user select the price Filters...........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
