@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 	        "pretty", 
 	        "html:target/cucumber-html-report",
 	        "json:target/cucumber.json",
-	        "junit:target/cucumber.xml" },
+	        "junit:target/cucumber.xml","io.qameta.allure.cuucmber7jvm.AllureCucumber7Jvm" },
 	    monochrome = true, dryRun = false)
 public class TestRunnerFile {
 
