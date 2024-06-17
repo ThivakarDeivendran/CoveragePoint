@@ -279,10 +279,10 @@ public static  WebDriver driver;
 	public static void submitMethod(WebElement element) {
 		element.submit();
 	}
-	public static void takesScreenShotMethod() throws IOException {
+	public static void takesScreenShotMethod(String name) throws IOException {
 		try {
 	File originScreenShotFile =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(originScreenShotFile, new File(System.getProperty("user.dir") +"//ScreenShots//ScreenShot"+ System.currentTimeMillis()+".png"));
+	FileUtils.copyFile(originScreenShotFile, new File(System.getProperty("user.dir") +"//ScreenShots//ScreenShot_"+name+".png"));
 	}catch(Exception e) {}
 	}
 
@@ -316,5 +316,8 @@ public static  WebDriver driver;
 	public static String getAttributeMethod(WebElement element, String attributeType) {
 		return element.getAttribute(attributeType);
 	}
-
+	
+	public static int countMultipleElements(List<WebElement> multipleElement) {
+		return multipleElement.size();
+		}
 }

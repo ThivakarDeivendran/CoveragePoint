@@ -69,6 +69,7 @@ public class TestHooks extends ReusableMethods {
 		FileUtils.copyDirectory(sourceDir, targetDir);
 		logger.info("Generating Allure report with trend");
 		allureUtil.runAllureCommand("allure serve");
+		System.exit(0);
 	}
 
 }
