@@ -48,9 +48,6 @@ public class TestHooks extends ReusableMethods {
 			if (errorLog.exists()) {
 				String content = new String(Files.readAllBytes(errorLog.toPath()));
 				if (!content.isEmpty()) {
-
-					// scenario.fail("Test failed due to logged errors. See erron, log for details.");
-					// Attach report to screenshot here
 				}
 				logger.info("The scenario:: " + scenaioName + " has failed.");
 			} else {
