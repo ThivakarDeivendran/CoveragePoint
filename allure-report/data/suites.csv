@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon Jun 17 10:44:50 IST 2024","Mon Jun 17 10:44:50 IST 2024","8","Default suite","Default test","testRunnerPackage.TestRunnerFile","testRunnerPackage.TestRunnerFile","setUpClass","setUpClass",""
+"broken","Mon Jun 17 11:21:01 IST 2024","Mon Jun 17 11:21:02 IST 2024","303","","Amazon Add to cart Feature","","To check whether Men SubModule displays under Fashion module","","To check whether Men SubModule displays under Fashion module","  Verify the Add to Cart Feature functionality"
+"broken","Mon Jun 17 11:21:02 IST 2024","Mon Jun 17 11:21:02 IST 2024","49","","Amazon Add to cart Feature","","To check whether filter working properly or not","","To check whether filter working properly or not","  Verify the Add to Cart Feature functionality"
