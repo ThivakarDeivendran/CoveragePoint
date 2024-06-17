@@ -1,1 +1,1 @@
-{"total":2,"items":[{"uid":"f05ac8b623e39a1f8caeab13721f77f5","name":"Amazon Add to cart Feature","statistic":{"failed":0,"broken":2,"skipped":0,"passed":0,"unknown":0,"total":2}},{"uid":"2c8837b97293ea01a164a5cd7048ad56","name":"Default suite","statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1}}]}
+{"total":1,"items":[{"uid":"f05ac8b623e39a1f8caeab13721f77f5","name":"Amazon Add to cart Feature","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}

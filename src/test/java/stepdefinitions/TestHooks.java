@@ -26,7 +26,6 @@ public class TestHooks extends ReusableMethods {
 	
 	@BeforeStep
 	public static void beforeStep() {
-		System.out.println("This will run before every Step");
 	}
 	
 	@AfterStep

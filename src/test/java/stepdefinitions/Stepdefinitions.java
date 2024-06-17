@@ -17,9 +17,11 @@ public class Stepdefinitions extends ReusableMethods{
 	public SoftAssert softAssert= new SoftAssert();
 	
 	
-	public Stepdefinitions(Shared_State state) {
-		this.sharedState=state;
-	}
+//	public Stepdefinitions(Shared_State state) {
+//		this.sharedState=state;
+//	}
+	
+	public Stepdefinitions() {}
 	
 	private static final Logger logger = LoggerFactory.getLogger(Stepdefinitions.class);
 	@Step
